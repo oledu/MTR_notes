@@ -1,0 +1,14 @@
+浮點樹誤差
+
+== & ===
+
+真正的理解變數
+a=[]; b=a; b.push(2] a==b; b=2; a!=b;
+
+function is an object
+
+anonymous function
+
+引數 argument  v.s. 參數 parameter
+
+Pass by value; pass by reference 

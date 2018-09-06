@@ -1,0 +1,37 @@
+git_init 在資料夾裡初始化git
+
+rm -rf .git 完整刪除git
+
+vim .gitignore 創建.gitignore 把不需要版本控制的檔案丟進去
+
+git add . 把全部檔案放入stage區
+
+git status 查詢git狀態
+
+git commit -am "message" 把stage區的文件全部commit 
+
+git diff 在還沒commit之前，觀察兩個版本的差異
+
+git log 顯示版本歷史紀錄
+
+git --oneline log的簡短版本
+
+git checkout -b branch_name
+== git branch branch_name + 
+   git checkout branch_name
+
+git checkout serial_num 去某個 commit or branch 版本
+
+git branch -v 看現在有哪些branch，master是init就會建立的branch
+
+git branch -d branch_name 刪除branch
+
+git checkout branch_name 切換到某個branch
+
+git merge branch_name 把branch_name合併近來現在的branch
+
+***conflict解決***
+
+
+
+

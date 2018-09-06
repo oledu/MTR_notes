@@ -1,0 +1,27 @@
+Node.js 是一個能讓 JavaScript 在瀏覽器外面執行的環境
+
+<<, >> 位元左移，右移
+>2<<1 
+4
+
+&& and
+|| or
+
+& 位元運算的and
+
+| 位元運算的or
+
+^ 位元運算的xor
+
+~ 位元運算的not
+
+a++ V.S. ++a
+
+typeof(var) boolean, number, string, object, undefined, function 
+>typeof(null)
+'object'
+
+Array.push(object) 陣列加入object
+
+
+

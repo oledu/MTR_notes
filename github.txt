@@ -1,0 +1,25 @@
+git push origin master 在本地commit之後，再push到遠端(GitHub)
+
+git pull origin master 等於是把遠端的 master merge 到本地的 branch，有時候會有衝突
+
+git clone "url" 從 github 上抓下 repository ， 有時候會有權限問題，可以先 fork 到自己的帳號
+
+** GitHub pages**
+
+** GitHub flow**
+
+Gitgub GitLab Gitbucket
+
+git commit --amend  更改commit內容，在vim的第一行
+
+git commit HEAD^ --hard 刪除上一次commit的所有東西，回到上一個版本
+git commit HEAD^ --soft 收回commit
+
+git checkout -- filename 把單一檔案回復到上一個 commit 時的狀態
+git checkout -- . 全部檔案回復
+
+git branch -m new_branch_name 打在要更改名稱的 branch 中
+
+git branch branch_name 獲得遠端的branch
+
+**git hook**有點深奧
