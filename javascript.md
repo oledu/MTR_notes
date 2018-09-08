@@ -33,7 +33,9 @@ Properties can't be changed, added or removed
 ### Objects
 #### Compared by reference
 Identities are compared; every value has its own identity
+
 ` >{} === {}  // two different empty objects`
+
 **`false`**
 
 #### Mutable by default
@@ -60,6 +62,6 @@ The primitive boolean type comprises the values true and false. The following op
 - true: All other values
 
 #### Binary Logical Operators
-Binary logical operators in JavaScript are short-circuiting.
+Binary logical operators in JavaScript are **short-circuiting**.
 
 
