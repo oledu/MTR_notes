@@ -20,7 +20,11 @@
 **`true`**
 
 `var prim1 = 123;`	
-`var prim2 = 123; > prim1 === prim2`	
+
+`var prim2 = 123;` 
+
+` prim1 === prim2`	
+
 `**true**`	
 
 ### Primitive Value
@@ -30,7 +34,7 @@ the content is comapared:
 ####  *Always immutable*  	
 Properties can't be changed, added or removed
 
-### Objects
+### Object
 #### Compared by reference
 Identities are compared; every value has its own identity
 
@@ -62,6 +66,36 @@ The primitive boolean type comprises the values true and false. The following op
 - true: All other values
 
 #### Binary Logical Operators
-Binary logical operators in JavaScript are **short-circuiting**.
+Binary logical operators in JavaScript are ***short-circuiting.
+***
+#### Equality Operators
+- Normal, or “lenient,” (in)equality: == and !=
+- Strict (in)equality: === and !==
+***always using strict equality is recommended***
+
+### Numbers
+All numbers in JavaScript are floating-point:
+` 1=== 1.0;`
+
+**`true`**
+
+- NaN
+-Infinity
+
+### Strings
+- The backslash (\) escapes characters and produces a few control characters.
+
+- Strings are concatenated via the plus (+) operator.
+
+`var messageCount = 3;`
+
+`'You have ' + messageCount + ' messages'`
+
+`'You have 3 messages'`
+
+### Strings Methods
+- string.slice()
+- string.trim()
+- stirng.indexOf()
 
 
