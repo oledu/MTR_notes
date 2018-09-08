@@ -8,10 +8,15 @@
 - Non-value: undefined, null
 
 `var obj1 = {}; // an empty object`	
+
 `var obj2 = {}; // another empty`	
+
 `object > obj1 === obj2`	
+
 **`false`**	
+
 `obj1 === obj1`	
+
 **`true`**
 
 `var prim1 = 123;`	
