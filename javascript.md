@@ -107,6 +107,7 @@ All numbers in JavaScript are floating-point:
 - for loop
 - while loop
 - ***break leaves the loop***
+
 -***continue starts a new loop iteration***
 
 
