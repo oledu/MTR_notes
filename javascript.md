@@ -7,18 +7,14 @@
 - Object: All others
 - Non-value: undefined, null
 
-`var obj1 = {}; // an empty object`	
-
-`var obj2 = {}; // another empty`	
-
-`object > obj1 === obj2`	
-
-**`false`**	
-
-`obj1 === obj1`	
-
-**`true`**
-
+```
+var obj1 = {}; // an empty object
+var obj2 = {}; // another empty	
+object > obj1 === obj2
+**false**	
+obj1 === obj1
+**true**
+```
 `var prim1 = 123;`	
 
 `var prim2 = 123;` 
@@ -109,6 +105,16 @@ All numbers in JavaScript are floating-point:
 - ***break leaves the loop***
 - ***continue starts a new loop iteration***
 
+### Functions
+A function expression produces a value and can thus be used to directly pass functions as arguments to other functions.
+- Function declarations are **hoisted**.That allows you to refer to functions that are declared later.
+- Additional parameters will be ignored
+- The Special Variable ***arguments***
+- Missing parameters will get the value undefined
+
+### Optional Parameters
+assigning default values to parameters
+`
 
 
 
