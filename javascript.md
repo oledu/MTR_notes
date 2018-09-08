@@ -23,16 +23,43 @@
 `var prim2 = 123; > prim1 === prim2`	
 `**true**`	
 
-Primitive Value
+### Primitive Value
 ####  *Comparde by value*
 the content is comapared:
-`3===3`
-**`true`**
 
 ####  *Always immutable*  	
-Properties can't be changed, added or removed		
-`var str = 'abc';`	
-`str.length = 1; // try to change property length`	
-`str.length // ⇒ no effect` 	
-`3`
+Properties can't be changed, added or removed
+
+### Objects
+#### Compared by reference
+Identities are compared; every value has its own identity
+` >{} === {}  // two different empty objects`
+**`false`**
+
+#### Mutable by default
+You can normally freely change, add, and remove properties
+
+#### undefined and null
+- undefined and null have no proerties
+- undefined means “no value.”
+- null means “no object.”
+
+### Categorizing Values Using typeof and instanceof
+- There are two operators for categorizing values: typeof is mainly used for primitive values, while instanceof is used for objects.
+- typeof null returning 'object' is a bug that can’t be fixed, because it would break existing code. It does not mean that null is an object.
+
+### Booleans
+The primitive boolean type comprises the values true and false. The following oper‐ ators produce booleans:
+- Binary logical operators: && (And), || (Or)
+- Prefix logical operator: ! (Not)
+- Comparison operators:
+ Equality operators, Ordering operators
+
+#### Truthy and Falsy
+- false: undefined, null, false, -0, NaN and ''
+- true: All other values
+
+#### Binary Logical Operators
+Binary logical operators in JavaScript are short-circuiting.
+
 
