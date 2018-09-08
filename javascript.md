@@ -11,18 +11,16 @@
 var obj1 = {}; // an empty object
 var obj2 = {}; // another empty	
 object > obj1 === obj2
-**false**	
+false
 obj1 === obj1
-**true**
+true
 ```
-`var prim1 = 123;`	
-
-`var prim2 = 123;` 
-
-` prim1 === prim2`	
-
-`**true**`	
-
+```
+var prim1 = 123;
+var prim2 = 123;
+prim1 === prim2	;
+true	
+```
 ### Primitive Value
 ####  *Comparde by value*
 the content is comapared:
@@ -34,10 +32,10 @@ Properties can't be changed, added or removed
 #### Compared by reference
 Identities are compared; every value has its own identity
 
-` >{} === {}  // two different empty objects`
-
-**`false`**
-
+```
+{} === {}  // two different empty objects
+false
+```
 #### Mutable by default
 You can normally freely change, add, and remove properties
 
@@ -72,10 +70,10 @@ Binary logical operators in JavaScript are ***short-circuiting.
 
 ### Numbers
 All numbers in JavaScript are floating-point:
-` 1=== 1.0;`
-
-**`true`**
-
+```
+1=== 1.0;
+true
+```
 - NaN
 -Infinity
 
@@ -83,12 +81,11 @@ All numbers in JavaScript are floating-point:
 - The backslash (\) escapes characters and produces a few control characters.
 
 - Strings are concatenated via the plus (+) operator.
-
-`var messageCount = 3;`
-
-`'You have ' + messageCount + ' messages'`
-
-`'You have 3 messages'`
+```
+var messageCount = 3;
+'You have ' + messageCount + ' messages'
+'You have 3 messages'
+```
 
 #### Strings Methods
 - string.slice()
@@ -114,7 +111,7 @@ A function expression produces a value and can thus be used to directly pass fun
 
 ### Optional Parameters
 assigning default values to parameters
-`
+```
 
 
 
