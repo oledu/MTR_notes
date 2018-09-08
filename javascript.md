@@ -1,8 +1,8 @@
-## comment 
+### comment 
 - //... for single line comment
 - /* ... * / for multiline comment
 
-## Primitive value Versus Objects
+### Primitive value Versus Objects
 - *primitive values*: boolenans, numbers, null and undefined
 - Object: All others
 - Non-value: undefined, null
@@ -71,6 +71,7 @@ Binary logical operators in JavaScript are ***short-circuiting.
 #### Equality Operators
 - Normal, or “lenient,” (in)equality: == and !=
 - Strict (in)equality: === and !==
+
 ***always using strict equality is recommended***
 
 ### Numbers
@@ -93,9 +94,22 @@ All numbers in JavaScript are floating-point:
 
 `'You have 3 messages'`
 
-### Strings Methods
+#### Strings Methods
 - string.slice()
 - string.trim()
 - stirng.indexOf()
+
+### Conditionals
+- if-else statement
+- switch statement
+
+### Loops
+- for loop
+- while loop
+- ***break leaves the loop***
+-***continue starts a new loop iteration***
+
+
+
 
 
