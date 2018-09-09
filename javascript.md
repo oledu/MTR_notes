@@ -8,17 +8,17 @@
 - Non-value: undefined, null
 
 ```
-var obj1 = {}; // an empty object
-var obj2 = {}; // another empty	
-object > obj1 === obj2
+>var obj1 = {}; // an empty object
+>var obj2 = {}; // another empty	
+>object > obj1 === obj2
 false
-obj1 === obj1
+>obj1 === obj1
 true
 ```
 ```
-var prim1 = 123;
-var prim2 = 123;
-prim1 === prim2	;
+>var prim1 = 123;
+>var prim2 = 123;
+>prim1 === prim2	;
 true	
 ```
 ### Primitive Value
@@ -33,7 +33,7 @@ Properties can't be changed, added or removed
 Identities are compared; every value has its own identity
 
 ```
-{} === {}  // two different empty objects
+>{} === {}  // two different empty objects
 false
 ```
 #### Mutable by default
@@ -71,7 +71,7 @@ Binary logical operators in JavaScript are ***short-circuiting.
 ### Numbers
 All numbers in JavaScript are floating-point:
 ```
-1=== 1.0;
+>1=== 1.0;
 true
 ```
 - NaN
@@ -82,8 +82,8 @@ true
 
 - Strings are concatenated via the plus (+) operator.
 ```
-var messageCount = 3;
-'You have ' + messageCount + ' messages'
+>var messageCount = 3;
+>'You have ' + messageCount + ' messages'
 'You have 3 messages'
 ```
 
@@ -110,9 +110,58 @@ A function expression produces a value and can thus be used to directly pass fun
 - Missing parameters will get the value undefined
 
 ### Optional Parameters
-assigning default values to parameters
+assigning default values to parameters:
+```
+function pair(x, y) { 
+	x = x || 0; // (1) y=y||0; 
+	return[x,y];
+}
+> pair()
+[ 0, 0 ]
+> pair(3)
+[ 3, 0 ]
+> pair(3, 5)
+[ 3, 5 ]
 ```
 
+### Strict Mode
+To switch it on, type the following line first in a JavaScript file or a <script> tag:
+`'use strict';`
+**also enable strict mode per function**
 
+### Objects and Constructors
+#### Single Object
+- Directly create plain objects, via object literals:
+```
+'use strict';
+var jane={
+        name: 'Jane',
+		describe: function () {
+			return 'Person named '+this.name;
+		} 
+};
+```
+- You can read (“get”) and write (“set”) properties:
+```
+> jane.name  // get
+'Jane'
+> jane.name = 'John';  // set
+> jane.newProperty = 'abc';  // property created automatically
+```
+- Function-valued properties such as describe are called methods:
+```
+> jane.describe()  // call method
+'Person named John'
+> jane.name = 'Jane'; 
+> jane.describe() 
+'Person named Jane'
+```
+- The in operator checks whether a property exists:
+```
+> 'newProperty' in jane
+true
+> 'foo' in jane
+false
+```
 
 
