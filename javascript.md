@@ -127,7 +127,7 @@ function pair(x, y) {
 To switch it on, type the following line first in a JavaScript file or a <script> tag:
 `'use strict';`
 
-//**also enable strict mode per function**
+**also enable strict mode per function**
 
 ### Objects and Constructors
 #### Single Object
@@ -180,13 +180,14 @@ use square brackets to get and set the property:
 #### Functions Inside a Method
 If you extract a method, it loses its connection with the object.
 
+```
 'use strict'; 
 var jane={
 	name: 'Jane',
 	describe: function () {
 		return 'Person named '+this.name;
 	}
-} 
+}
 ```
 
 
