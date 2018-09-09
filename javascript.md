@@ -127,7 +127,7 @@ function pair(x, y) {
 To switch it on, type the following line first in a JavaScript file or a <script> tag:
 `'use strict';`
 
-**also enable strict mode per function**
+//**also enable strict mode per function**
 
 ### Objects and Constructors
 #### Single Object
