@@ -123,15 +123,16 @@ function pair(x, y) {
 > pair(3, 5)
 [ 3, 5 ]
 ```
-
 ### Strict Mode
 To switch it on, type the following line first in a JavaScript file or a <script> tag:
 `'use strict';`
+
 **also enable strict mode per function**
 
 ### Objects and Constructors
 #### Single Object
 - Directly create plain objects, via object literals:
+
 ```
 'use strict';
 var jane={
@@ -148,6 +149,7 @@ var jane={
 > jane.name = 'John';  // set
 > jane.newProperty = 'abc';  // property created automatically
 ```
+
 - Function-valued properties such as describe are called methods:
 ```
 > jane.describe()  // call method
@@ -162,6 +164,29 @@ var jane={
 true
 > 'foo' in jane
 false
+```
+- The delete operator removes a property:
+```
+> delete jane.newProperty
+true
+```
+#### Arbitrary Property Keys
+use square brackets to get and set the property:
+```
+> var obj = { 'not an identifier': 123 }; 
+> obj['not an identifier']
+123
+```
+#### Functions Inside a Method
+If you extract a method, it loses its connection with the object.
+
+'use strict'; 
+var jane={
+	name: 'Jane',
+	describe: function () {
+		return 'Person named '+this.name;
+	}
+} 
 ```
 
 
