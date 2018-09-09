@@ -124,12 +124,15 @@ function pair(x, y) {
 [ 3, 5 ]
 ```
 ### Strict Mode
-To switch it on, type the following line first in a JavaScript file or a <script> tag:
+To switch it on, type the following line first in a JavaScript file or a < script > tag:
 `'use strict';`
 
 **also enable strict mode per function**
 
+
+
 ### Objects and Constructors
+
 #### Single Object
 - Directly create plain objects, via object literals:
 
@@ -189,5 +192,6 @@ var jane={
 	}
 }
 ```
+- We want to extract the method describe from jane, put it into a variable func, and call it. 
 
 
