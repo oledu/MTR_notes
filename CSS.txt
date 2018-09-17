@@ -1,0 +1,28 @@
+pseudo class(:hover, :first-child, last-child)
+
+pseudo element(::before, ::after)
+
+transition (圖片有轉變的時候的動畫）
+
+Float, flex box
+
+z-index
+
+transform: scale(n)
+
+transform: teanslateX(n px)
+transform: teanslateY(n px)
+
+
+transform: rotate(n deg)
+
+CSS prefix
+-o-transition (opera)
+-ms-transition (ie)
+-moz-transition (firefox)
+-webkit-transition (chrome)
+
+CSS Naming
+BEM 
+block_element--modifier
+

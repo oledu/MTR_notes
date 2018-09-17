@@ -1,0 +1,73 @@
+p	select all tag p
+
+#id	select element with a specific id
+
+a b 	select all b in a
+
+#id  A	select all A element with id
+
+.b	select all element with class b
+
+a.b 	tag a with class b
+
+a, b	select all a and all b
+
+*	select all
+
+p *	select anything inside p
+
+a + b 	select all b directly fellow a
+
+a ~ b	select all b that follow a
+
+a > b	select all b are directly children a	
+
+:first-child	selects all first child elements
+
+p:first-child:	elects all first child p elements
+
+:only-child	select any element that is the only element inside of another one
+
+b:only-child 	select the span elements that are the only child of some other element
+
+ul li:only-child selects the only li element that are in a ul
+
+:last-child	selects all last-child element
+
+span:last-child	selects all last-child 
+
+ul li:last-child	selects the last li elements inside of any ul
+
+:nth-child(8) selects every element that is the 8th child of another element
+
+div p:nth-child(2) selects the second p in every div
+
+:nth-last-child(A)
+
+:first-of-type(n)
+
+:nth-of-type(nth, even, odd, 6n+2)
+
+:only-of-type
+
+p span:only-of-type selects a span within any p if it is the only span in there.
+
+:last-of-type
+
+:empty
+
+:not(X)	 select all elements that do not match selector "X"
+
+div:not(:first-child) selects every div that is not a first child.
+
+a[href] selects all a elements that have a href="anything" attribute.
+
+[attribute="value"]
+
+[attribute^="value"]	Select all elements with an attribute value that starts with specific characters
+
+[attribute$="value"]	Select all elements with an attribute value that ends with specific characters
+
+[attribute*="value"]	Select all elements with an attribute value that contains specific characters anywhere
+
+

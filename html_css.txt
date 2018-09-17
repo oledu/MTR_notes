@@ -1,0 +1,69 @@
+html hypertext markup language
+
+<!DOCTYPE html>跟瀏覽器說請用標準模式（固定寫法）
+<head>網頁資訊
+	<meta charset="UTF-8" /">
+	<meta name="og:title" content="網頁標題“>
+	<meta name="og:description" content="網頁描述‘>
+	<meta name="viewport" content="width=device-width,initial-scale=1"
+**facebook debugger
+<body>網頁內容
+	<a href="url" target="_blank">name</a> 超連結
+	<ul>
+		<li>option</li>
+		<li>option2</li>
+	</ul>
+	<div></div>
+	<p></p>
+</body>
+	
+CSS cascading style sheet
+1.在行內使用ＣＳＳ
+ <p style="color:red; font-size:20px; ...>abc</p>
+
+2.放在head裡面
+<head>
+	<style>
+		h1{...}
+		.class_name{...}
+		#id_name{...}
+		順序 id > class > tag
+		#id_name tag. //tag in id
+		#id_name > tag //id底下第一層的tag
+	</style>
+</head>
+
+3.分成兩個檔案
+<head>
+	<link rel="stylesheet" type="text/css" href="css_filename.css">
+</head>
+
+
+
+Box model
+
+display:inline, block, inline-block, none
+margin, padding, border
+width, height
+*  -webkit-box-sizing: border-box;
+*     -moz-box-sizing: border-box;
+*          box-sizing: border-box;
+
+Position
+Static, relative, absolute, fixed
+
+
+Media Query
+RWD responsive Web Design
+
+@media screen and (max-width:700px){
+	body{
+		background: yellow;
+	}
+}
+@media screen and (min-width:700px){
+	body{	
+		background: yellow;
+	}
+}
+
