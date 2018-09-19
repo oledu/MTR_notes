@@ -4,7 +4,7 @@ html hypertext markup language
 <head>網頁資訊
 	<meta charset="UTF-8" /">
 	<meta name="og:title" content="網頁標題“>
-	<meta name="og:description" content="網頁描述‘>
+	<meta name="og:description" content="網頁描述">
 	<meta name="viewport" content="width=device-width,initial-scale=1"
 **facebook debugger
 <body>網頁內容
