@@ -1,0 +1,46 @@
+伺服器處理 request & response
+Apache
+ 
+寫程式來處理
+PHP
+
+資料庫存資料
+mySQL
+
+isset()
+
+$_POST['name']
+$_GET['name']
+
+
+redirect
+header('Location: index.php')
+
+
+SQL Structure Query Language
+
+CRUD create, read, update, and delete 
+新增 insert INTO user(name, phone) values(Peter,1234)
+查詢 select phone from user where name=peter
+更新 update user set phone=123 where name=peter
+刪除 delete from user where name = peter
+localhost:8080/phpmyadmin
+
+
+required('connect.php')
+
+required_once('connect.php')
+
+資料庫
+正規化 Normalization
+
+索引 index (讓搜尋變快)
+Primary index
+Unique index
+
+內建函示
+COUNT, SUM, CONCAT, between, in, like
+
+JOIN
+INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN
+

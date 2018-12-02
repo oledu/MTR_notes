@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 700px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      height: 300px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    span {
+      color: green;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>目前的比特幣價格是： <span class="price"></span></h1>
+
+    <button class=" btn">renew@</button>
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+  var btn = document.querySelector('.btn');
+  console.log(btn);
+  btn.addEventListener('click', function () {
+    var XHR = new XMLHttpRequest();
+    var price = document.querySelector('.price')
+    var currency = 'TWD';
+    XHR.onreadystatechange = function () {
+      if (XHR.readyState == 4) {
+        if (XHR.status == 200) {
+          var bit = JSON.parse(XHR.responseText).bpi[currency].rate;
+          price.innerText = bit + ' ' + currency;
+        }
+      }
+    }
+    XHR.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice/TWD.json')
+    XHR.send();
+  })
+
+
+
+
+  // var XHR = new XMLHttpRequest();
+
+  // XHR.onreadystatechange = function () {
+  //   console.log('ready state is...' + XHR.readyState);
+  //   if (XHR.readyState == 4) {
+  //     if (XHR.status == 200) {
+  //       console.log(XHR.responseText);
+  //     } else {
+  //       console.log('some problems');
+
+  //     }
+  //   }
+  // }
+  // XHR.open('GET', 'https://api.github.com/zen');
+  // XHR.send();
+
+</script>
